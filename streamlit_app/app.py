@@ -50,7 +50,6 @@ def get_model() -> keras.Model:
 # Load CNN
 model = get_model()
 # Function to get label prediction and probability
-@st.cache_data
 def get_prediction(model, img_tensor) -> tuple:
     # Transform prediction one-hot matrix to label via argmax
     def inverse_transform(labels:tf.Tensor) -> pd.Series:
