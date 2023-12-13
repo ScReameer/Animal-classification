@@ -7,7 +7,7 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 import tensorflow as tf
 import tensorflow_hub as hub
 import keras
-from PIL import Image, UnidentifiedImageError
+from PIL import Image
 import requests
 import wget
 # display device
@@ -85,11 +85,5 @@ if st.button('Предсказать класс', key='prediction') and url:
             else:
                 animals = list(INVERSE_TRANSFORM_DICT.values())
                 st.markdown(f'Не удалось распознать животное. Есть возможность распознать только следующий список животных: {animals}')
-        except requests.exceptions.MissingSchema:
-            st.write('Неверный формат URL')
-        except UnidentifiedImageError:
-            st.write('Неверный формат изображения')
-        except requests.exceptions.InvalidSchema:
-            st.write('Неверный формат изображения')
-        except requests.exceptions.ConnectTimeout:
-            st.write('Не получилось установить связь с сервером')
+        except:
+            st.write('Неверный формат URL или не удалось загрузить изображение')
