@@ -23,12 +23,12 @@
 
 4. **Выходной слой** - 10 нейронов (соответствует количеству классов в датасете) с активацией `softmax` для получения распределения вероятностей принадлежности входных объектов к классам
 
-    ![](./notebook/model.png)
+    <img src='./notebook/model.png'></img>
 
 ## Пример использования нейросети для получения предсказаний
 1. *Python 11.x*
 
-2. Установить [зависимости](./requirements.txt)  
+2. Установить [зависимости](https://github.com/ScReameer/Animal-classification/blob/master/requirements.txt)  
     ```bash
     $ pip install -r requirements.txt
     ```
