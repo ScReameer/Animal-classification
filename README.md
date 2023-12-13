@@ -23,7 +23,7 @@
 
 4. **Выходной слой** - 10 нейронов (соответствует количеству классов в датасете) с активацией `softmax` для получения распределения вероятностей принадлежности входных объектов к классам
 
-    <img src='./notebook/model.png'></img>
+    <img src='https://raw.githubusercontent.com/ScReameer/Animal-classification/master/notebook/model.png'></img>
 
 ## Пример использования нейросети для получения предсказаний
 1. *Python 11.x*
