@@ -63,6 +63,9 @@ def get_prediction(model, img_tensor) -> tuple:
     return label_prediction, max_proba_label
 # Title
 st.title('Классификация животных по изображению')
+st.markdown(
+    """Сейчас модель корректно распознает только следующих животных: бабочка, кошка, курица, корова, собака, слон, лошадь, овца, паук, белка"""
+)
 # URL input
 url = st.text_input('Ссылка на изображение', '', key='url')
 def clear_btn():
